@@ -1,0 +1,51 @@
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+ion-header ion-toolbar{
+  padding: 10px;
+}
+
+ion-content ion-item{
+  padding-top: 15px;
+}
+
+
+.encabezado1{
+  margin: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+.encabezado{
+    text-align: center;
+    background: rgb(228, 222, 222);
+    border-radius: 30px;
+    margin-top: 15px;
+}
+
+.guardar {
+    margin: 30px;
+
+}
+ion-item ion-button{
+  padding-left: 5px;
+}
+
+.dowload-img{
+  cursor: pointer;
+}
+
+.image{
+  padding: 10px;
+  border: solid 1px rgb(0, 0, 0);
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dowload-img{
+  cursor: auto;
+}

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start" class="btm-menu">
+        <ion-button (click)="abrirmenu()">
+          <ion-icon slot="icon-only" color="primary" name="menu-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+
+  <h3 class="subtitulo encabezado">Login</h3>
+
+
+    <ion-item class="inputUser" color="dark">
+      <ion-label class="normal" position="floating">
+      Email:
+    </ion-label>
+    <ion-input [(ngModel)]="cliente.email" type="text" class="normal" inputmode="text"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="inputUser"  color="dark">
+    <ion-label class="normal" position="floating">
+      Nombre:
+    </ion-label>
+    <ion-input [(ngModel)]="cliente.nombre" type="text" class="normal" inputmode="text"></ion-input>
+  </ion-item>
+
+  <ion-item class="inputUser"  color="dark">
+    <ion-label class="normal" position="floating">
+      Celular:
+    </ion-label>
+    <ion-input [(ngModel)]="cliente.celular" type="text" class="normal"></ion-input>
+  </ion-item>
+
+  <ion-item class="inputUser"  color="dark">
+    <ion-label class="normal" position="floating">
+      Ubicacion:
+    </ion-label>
+    <ion-input [(ngModel)]="cliente.referencia" type="text" class="normal" inputmode="text"></ion-input>
+  </ion-item>
+
+
+          <!--Agregar foto-->
+      <div class="dowload-img">
+        <ion-item color="dark">
+          <ion-label class="normal">
+          foto
+          </ion-label>
+          <!--Icono foto-->
+          <ion-buttons slot="end" >
+            <ion-button >
+              <label for="img-upload">
+                <ion-icon style="cursor: pointer;" slot=icon-only name="images" ></ion-icon>
+              </label>
+              <input (change)="newImageUpload($event)" id="img-upload" style="display: none;" type="file" accept="image/*">
+            </ion-button>
+          </ion-buttons>
+        </ion-item>
+      </div>
+
+          <ion-button class="btn-registerUser" (click)="registerUser()">Registrarse</ion-button>
+
+          <ion-button class="btn-registerUser" (click)="salir()">
+              SALIR
+        </ion-button>
+
+
+</ion-content>

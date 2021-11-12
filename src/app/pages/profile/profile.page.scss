@@ -1,0 +1,104 @@
+.welcome-card {
+  padding-top: 25px;
+  margin-bottom: 28px;
+  margin-top: 15px;
+
+
+  ion-img {
+        width: 145px;
+        height: 150px;
+        margin: auto;
+        background-size: cover;
+
+  }
+
+.btn-lvl{
+  justify-content: center;
+}
+}
+
+
+.wrapper {
+  display: inline-flex; /// Muestra que debe seguir por el lado no salto en lineas
+
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  height: 8px;                //Altura
+  width: 8px;                 //Anchura
+  background-color: #ffffff;  //Sombra
+  bottom: -3px;
+  left: 50%;
+}
+
+.wrapper .icon:hover .tooltip { //Salida de texto por cada icon
+  top: -35px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+///Icon facebook
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999; ///Color de fondo
+  color: #ffffff;
+}
+
+///Icon twitter
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6; ///Color de fondo
+  color: #ffffff;
+}
+
+///Icon instagram
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c; ///Color de fondo
+  color: #ffffff;
+}
+
+///Icon github
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333; ///Color de fondo
+  color: #ffffff;  //
+}

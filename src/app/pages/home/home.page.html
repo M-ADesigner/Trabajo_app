@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Home
+    </ion-title>
+      <ion-buttons slot="start" class="btm-menu">
+        <ion-button (click)="abrirmenu()">
+          <ion-icon slot="icon-only" color="primary" name="menu-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/Perfil:']">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="dark">
+  <ion-card class="product-card">
+    <ion-card-title class="producto-title">
+      Nombre producto
+    </ion-card-title>
+    <ion-card-header class="img-product">
+      <ion-label>FOTO</ion-label>
+    </ion-card-header>
+    <ion-card-content class="info-product">
+      <ion-label class="normal">Precio</ion-label>
+      <div class="separacion"></div>
+      <ion-label class="normal">Descripcion</ion-label>
+    </ion-card-content>
+    <ion-button class="btn-class" >
+      <ion-label class="normal">Comprar</ion-label>
+    </ion-button>
+    <ion-button class="btn-class">
+      <ion-label class="normal">Agregar</ion-label>
+    </ion-button>
+  </ion-card>
+
+
+</ion-content>

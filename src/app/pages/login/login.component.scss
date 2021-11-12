@@ -1,0 +1,38 @@
+
+.encabezado{
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.inputUser {
+  border: solid 1px black;
+  border-radius: 30px;
+  height: 50px;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 15px;
+  background-color: none;
+}
+ion-input{
+  background-color: none;
+  border: none;
+  text-decoration: none;
+
+}
+
+.dowload-img{
+  border-top: solid 1px black;
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-bottom: none;
+}
+
+.btn-registerUser{
+  width: 250px;
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+}
